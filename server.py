@@ -13,6 +13,11 @@ def index():
         session['visits'] += 1
     return render_template("index.html")
 
+@app.route('/add_two')
+def plus_two():
+    session['visits'] += 1
+    return redirect('/')
+
 @app.route('/destroy_session')
 def hard_reset():
     session.clear()
