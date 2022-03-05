@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page visits</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div>
+        <h1>Number of times visited:</h1>
+        <p>{{session['visits']}}</p>
+        <a type="reset" href="/destroy_session" >Reset</a>
+    </div>
+</body>
+</html>
+
+<!-- Don't know why it's not reading my stylesheet even though its the same as before. -->
+
